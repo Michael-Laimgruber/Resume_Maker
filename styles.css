@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+/* ====================
+   BODY
+   ==================== */
+body {
+  margin: 0;
+  font-family: 'Domine', serif;
+  background-color: #f0f0f0;
+}
+
+/* ====================
+   PAGE CONTAINER
+   ==================== */
+#page {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Domine', serif;
+}
+
+/* ====================
+   HEADER
+   ==================== */
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* ====================
+   MAIN LAYOUT
+   ==================== */
+main {
+  display: flex;
+  justify-content: center;
+}
+
+/* ====================
+   CONTROLS WRAPPER
+   ==================== */
+.controls {
+  margin: 20px 0;
+}
+
+/* ====================
+   CONTROLS BUTTONS
+   ==================== */
+.controls button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ====================
+   PREVIEW WRAPPER
+   ==================== */
+#preview-wrapper {
+  background-color: #ccc;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ====================
+   PREVIEW AREA
+   ==================== */
+#preview {
+  background-color: #fff;
+  width: 210mm;
+  height: 297mm;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20mm;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+/* ====================
+   GLOBAL TOOLBAR WRAPPER
+   ==================== */
+#global-toolbar {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 10px;
+  background: #fefefe;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  font-size: 14px;
+}
+
+/* ====================
+   TOOLBAR TOP ROW
+   ==================== */
+#global-toolbar .toolbar-top-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+/* ====================
+   TOOLBAR BOTTOM ROW
+   ==================== */
+#global-toolbar .toolbar-bottom-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+/* ====================
+   TOOLBAR BUTTONS
+   ==================== */
+#global-toolbar button {
+  background: none;
+  border: none;
+  margin: 0 4px;
+  padding: 4px;
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+/* ====================
+   TOOLBAR BUTTON SVG ICONS
+   ==================== */
+#global-toolbar button svg {
+  height: 24px;
+  width: 24px;
+  opacity: 0.7;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+/* ====================
+   TOOLBAR BUTTON HOVER EFFECT ON ICONS
+   ==================== */
+#global-toolbar button:hover svg {
+  background-color: #999;
+  opacity: 1;
+  transform: scale(1.1);
+  border-radius: 4px; /* optional for rounding corners */
+}
+
+/* ====================
+   FONT CONTROLS WRAPPER
+   ==================== */
+.font-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ====================
+   FONT CONTROLS LABEL
+   ==================== */
+.font-controls label {
+  display: flex;
+  align-items: center;
+}
+
+/* ====================
+   FONT CONTROLS SELECTS
+   ==================== */
+.font-controls select {
+  padding: 2px 6px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* ====================
+   TEXTBOX
+   ==================== */
+.textbox {
+  display: flex;
+  gap: 6px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+/* ====================
+   TEXTBOX WRAPPER BASE
+   ==================== */
+.textbox-wrapper {
+  position: relative;
+  cursor: default;
+  padding-left: 25px;
+  padding-right: 30px;
+  transition: box-shadow 0.3s ease;
+  resize: vertical;
+  overflow: auto;
+  min-width: 100px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+
+/* ====================
+   TEXTBOX WRAPPER HOVER AND ACTIVE
+   ==================== */
+.textbox-wrapper:hover {
+  box-shadow: 0 0 8px 2px rgba(100, 100, 100, 0.3);
+  cursor: auto;
+}
+
+.textbox-wrapper.active-textbox {
+  box-shadow: 0 0 8px 2px rgba(100, 100, 100, 0.3);
+}
+
+/* ====================
+   LINE WRAPPER BASE
+   ==================== */
+.line-wrapper {
+  position: relative;
+  cursor: default;
+  padding-left: 25px;
+  padding-right: 30px;
+}
+
+/* ====================
+   LINE STYLE
+   ==================== */
+hr.line {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 20px 0;
+  transition: box-shadow 0.3s ease;
+}
+
+/* ====================
+   LINE HOVER EFFECT
+   ==================== */
+hr.line:hover {
+  box-shadow: 0 0 8px 2px rgba(100, 100, 100, 0.3);
+  cursor: pointer;
+}
+
+/* ====================
+   DELETE BUTTON BASE
+   ==================== */
+.delete-btn {
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #999;
+  font-size: 16px;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+/* ====================
+   DELETE BUTTON VISIBILITY ON HOVER
+   ==================== */
+.textbox-wrapper:hover .delete-btn,
+.line-wrapper:hover .delete-btn {
+  opacity: 1;
+}
+
+/* ====================
+   DRAG HANDLE BASE
+   ==================== */
+.drag-handle {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: #999;
+  border-radius: 3px;
+  cursor: grab;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  user-select: none;
+  border: none;
+  padding: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* ====================
+   DRAG HANDLE ACTIVE STATE
+   ==================== */
+.drag-handle:active {
+  cursor: grabbing;
+}
+
+/* ====================
+   DRAG HANDLE VISIBILITY ON HOVER
+   ==================== */
+.textbox-wrapper:hover .drag-handle,
+.line-wrapper:hover .drag-handle {
+  opacity: 0.3;
+}
+
+/* ====================
+   PRINT STYLES
+   ==================== */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #preview,
+  #preview * {
+    visibility: visible;
+  }
+
+  #preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 20mm;
+    box-shadow: none;
+    border: none;
+  }
+
+  .delete-btn,
+  .drag-handle,
+  #global-toolbar,
+  .controls {
+    display: none !important;
+  }
+
+  .textbox {
+    border: none !important;
+  }
+}
+
+
+.toolbar-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px; /* adjust spacing */
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+
+
+/* SPLIT TEXTBOX */
+/* Textbox container: horizontal flex with gap */
+.textbox {
+  display: flex;
+  gap: 8px;           /* a bit more breathing room */
+  width: 100%;        /* fill the wrapper width */
+  box-sizing: border-box;
+}
+
+/* Each column: flexible, vertically scrollable, editable */
+.textbox-column {
+  flex: 1 1 0;        /* grow & shrink equally, base 0 */
+  min-width: 50px;    /* prevent collapsing too small */
+  max-width: 100%;    /* never overflow container */
+  padding: 6px 8px;
+  border-left: 1px solid #ccc;
+  outline: none;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-y: auto;   /* allow vertical scrolling inside if too tall */
+  max-height: 500px;  /* or your preferred max height */
+  background: #fff;
+}
+
+/* Remove left border for first column */
+.textbox-column:first-child {
+  border-left: none;
+}
+
+
+/* Hide border in print */
+@media print {
+  .textbox-column {
+    border-left: none !important;
+  }
+}
+
+
+.textbox, .textbox-column {
+  text-align: left; /* or whatever default you want */
+}
+
+
+/* JUSTIFY FULL TEXT */
+.justify-full {
+  text-align: justify;
+  text-align-last: justify;
+  /* optionally: */
+  hyphens: auto;
+}
+
+
+
