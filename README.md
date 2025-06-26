@@ -1,3 +1,5 @@
+Live Demo: [https://michael-laimgruber.github.io/Resume_Maker/](https://michael-laimgruber.github.io/Resume_Maker/)
+
 # Resume Maker
 
 A modern, web-based resume builder with live preview and modular content blocks designed for fast, flexible resume creation.
