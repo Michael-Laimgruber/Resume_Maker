@@ -14,255 +14,246 @@
 <!-- BODY DIV -->
 <div id="page">
 
-<!-- HEADER -->
-<header>
-  <h1>RESUME MAKER</h1>
-  <h3>Unfinished Version</h3>
-  <p></p>
-  <p></p>
-</header>
+  <!-- HEADER -->
+  <header>
+    <h1>RESUME MAKER</h1>
+    <h3>Unfinished Version</h3>
+    <p></p>
+    <p></p>
+  </header>
 
 
+  <!-- old: global-toolbar -->
+  <div id="toolbar_global"> 
 
-
-<!-- GLOBAL TOOLBAR -->
-<div id="global-toolbar">
-
-
-
-  <!-- TOP TOOLBAR -->
-  <div class="toolbar-top-row">
-
-
-
-    <!-- SAVE -->
-    <div class="button-toolbar-container save-project">
-      <button id="save-project">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2m-8 1V4m0 12-4-4m4 4 4-4"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- LOAD -->
-    <div class="button-toolbar-container load-project">
-      <button id="load-project">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2M12 4v12m0-12 4 4m-4-4L8 8"/>
-        </svg>
-      </button>
-
-
-    </div>
-
-    <!-- EXPORT -->
-    <div class="button-toolbar-container export-pdf">
-      <button id="export-pdf">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M16.444 18H19a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h2.556M17 11V5a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v6h10ZM7 15h10v4a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-4Z"/>
-        </svg>
-      </button>
-    </div>
-
-
-              <!-- SEPARATOR -->
-              <div class="toolbar-separator" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-width="2">
-              <path d="M12 0v24" stroke-linecap="round" stroke-width="1" />
+      <!-- old: toolbar-top-row -->
+      <div class="toolbar_1">
+            <!-- SAVE -->
+          <div class="button-toolbar-container save-project">
+            <button id="save-project">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2m-8 1V4m0 12-4-4m4 4 4-4"/>
               </svg>
-              </div>
+            </button>
+          </div>
 
-    <!-- RESET -->
-    <div class="button-toolbar-container reset-project">
-      <button id="reset-project">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- SEPARATOR -->
-    <div class="toolbar-separator" aria-hidden="true">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-width="2">
-    <path d="M12 0v24" stroke-linecap="round" stroke-width="1" />
-  </svg>
-    </div>
-
-    <!-- FONT CONTROL -->
-    <span class="font-controls">
-
-
-      <!-- FONT FAMILY SVG -->
-      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10.5785 19 4.2979-10.92966c.0369-.09379.1674-.09379.2042 0L19.3785 19m-8.8 0H9.47851m1.09999 0h1.65m7.15 0h-1.65m1.65 0h1.1m-7.7-3.9846h4.4M3 16l1.56685-3.9846m0 0 2.73102-6.94506c.03688-.09379.16738-.09379.20426 0l2.50367 6.94506H4.56685Z"/>
-      </svg>
-
-      <!-- FONT FAMILY DROPDOWN -->
-      <select id="font-family">
-        <option>Roboto</option>
-        <option>Georgia</option>
-        <option>Arial</option>
-        <option>Open Sans</option>
-      </select>
-
-
-
-      <!-- FONT SIZE SVG -->
-      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6.2V5h11v1.2M8 5v14m-3 0h6m2-6.8V11h8v1.2M17 11v8m-1.5 0h3"/>
-      </svg>
-
-      <!-- FONT SIZE DROPDOWN -->
-      <select id="font-size">
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-        <option>11</option>
-        <option>12</option>
-        <option>14</option>
-        <option>16</option>
-        <option>18</option>
-        <option>20</option>
-      </select>
-    </span>
-
-  <!-- TOP TOOLBAR CLOSING DIV -->
-  </div>
-  <!-- BOTTOM TOOLBAR -->
-  <div class="toolbar-bottom-row">
-
-    <!-- BOLD -->
-    <div class="button-toolbar-container bold">
-      <button data-cmd="bold">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5h4.5a3.5 3.5 0 1 1 0 7H8m0-7v7m0-7H6m2 7h6.5a3.5 3.5 0 1 1 0 7H8m0-7v7m0 0H6"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- ITALIC -->
-    <div class="button-toolbar-container italic">
-      <button data-cmd="italic">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8.874 19 6.143-14M6 19h6.33m-.66-14H18"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- UNDERLINE -->
-    <div class="button-toolbar-container underline">
-      <button data-cmd="underline">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M6 19h12M8 5v9a4 4 0 0 0 8 0V5M6 5h4m4 0h4"/>
-        </svg>
-      </button>
-    </div>
-            <!-- SEPARATOR -->
-            <div class="toolbar-separator" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-width="2">
-                <path d="M12 0v24" stroke-linecap="round" stroke-width="1" />
+          <!-- LOAD -->
+          <div class="button-toolbar-container load-project">
+            <button id="load-project">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2M12 4v12m0-12 4 4m-4-4L8 8"/>
               </svg>
-            </div>
+            </button>
 
 
+          </div>
 
-    <!-- LIST -->
-    <div class="button-toolbar-container unordered-list">
-      <button data-cmd="insertUnorderedList">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M9 8h10M9 12h10M9 16h10M4.99 8H5m-.02 4h.01m0 4H5"/>
+          <!-- EXPORT -->
+          <div class="button-toolbar-container export-pdf">
+            <button id="export-pdf">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M16.444 18H19a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h2.556M17 11V5a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v6h10ZM7 15h10v4a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-4Z"/>
+              </svg>
+            </button>
+          </div>
+
+
+                    <!-- SEPARATOR -->
+                    <div class="toolbar-separator" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+                    <path d="M12 0v24" stroke-linecap="round" stroke-width="1" />
+                    </svg>
+                    </div>
+
+
+          <!-- RESET -->
+          <div class="button-toolbar-container reset-project">
+            <button id="reset-project">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- SEPARATOR -->
+          <div class="toolbar-separator" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+          <path d="M12 0v24" stroke-linecap="round" stroke-width="1" />
         </svg>
-      </button>
-    </div>
+          </div>
 
-            <!-- SEPARATOR -->
-            <div class="toolbar-separator" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-width="2">
-              <path d="M12 0v24" stroke-linecap="round" stroke-width="1" />
+          <!-- FONT CONTROL -->
+          <span class="font-controls">
+
+
+            <!-- FONT FAMILY SVG -->
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10.5785 19 4.2979-10.92966c.0369-.09379.1674-.09379.2042 0L19.3785 19m-8.8 0H9.47851m1.09999 0h1.65m7.15 0h-1.65m1.65 0h1.1m-7.7-3.9846h4.4M3 16l1.56685-3.9846m0 0 2.73102-6.94506c.03688-.09379.16738-.09379.20426 0l2.50367 6.94506H4.56685Z"/>
             </svg>
-            </div>
 
-    <!-- ALIGN LEFT -->
-    <div class="button-toolbar-container justify-left">
-      <button data-cmd="justifyLeft">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6h8m-8 4h12M6 14h8m-8 4h12"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- ALIGN CENTER -->
-    <div class="button-toolbar-container justify-center">
-      <button data-cmd="justifyCenter">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6h8M6 10h12M8 14h8M6 18h12"/>
-        </svg>
-      </button>
-    </div>
-    
-    <!-- ALIGN RIGHT -->
-    <div class="button-toolbar-container justify-right">
-      <button data-cmd="justifyRight">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6h-8m8 4H6m12 4h-8m8 4H6"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- ALIGHT JUSTIFY -->
-    <div class="button-toolbar-container justify-full">
-      <button data-cmd="justifyFull">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6H6m12 4H6m12 4H6m12 4H6"/>
-        </svg>
-      </button>
-    </div>
+            <!-- FONT FAMILY DROPDOWN -->
+            <select id="font-family">
+              <option>Roboto</option>
+              <option>Georgia</option>
+              <option>Arial</option>
+              <option>Open Sans</option>
+            </select>
 
 
-            <!-- SEPARATOR -->
-            <div class="toolbar-separator" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-width="2">
-                <path d="M12 0v24" stroke-linecap="round" stroke-width="1" />
+
+            <!-- FONT SIZE SVG -->
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6.2V5h11v1.2M8 5v14m-3 0h6m2-6.8V11h8v1.2M17 11v8m-1.5 0h3"/>
+            </svg>
+
+            <!-- FONT SIZE DROPDOWN -->
+            <select id="font-size">
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>14</option>
+              <option>16</option>
+              <option>18</option>
+              <option>20</option>
+            </select>
+          </span>
+      </div>
+
+      <!-- old: toolbar-bottom-row -->
+      <div class="toolbar_2">
+            <!-- BOLD -->
+          <div class="button-toolbar-container bold">
+            <button data-cmd="bold">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5h4.5a3.5 3.5 0 1 1 0 7H8m0-7v7m0-7H6m2 7h6.5a3.5 3.5 0 1 1 0 7H8m0-7v7m0 0H6"/>
               </svg>
-            </div>
+            </button>
+          </div>
+
+          <!-- ITALIC -->
+          <div class="button-toolbar-container italic">
+            <button data-cmd="italic">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8.874 19 6.143-14M6 19h6.33m-.66-14H18"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- UNDERLINE -->
+          <div class="button-toolbar-container underline">
+            <button data-cmd="underline">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M6 19h12M8 5v9a4 4 0 0 0 8 0V5M6 5h4m4 0h4"/>
+              </svg>
+            </button>
+          </div>
+                  <!-- SEPARATOR -->
+                  <div class="toolbar-separator" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+                      <path d="M12 0v24" stroke-linecap="round" stroke-width="1" />
+                    </svg>
+                  </div>
 
 
 
-    <!-- SPLIT COLUMN ADD -->
-    <div class="button-toolbar-container split-columns-add">
-      <button id="split-columns-add">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5v14m8-7h-2m0 0h-2m2 0v2m0-2v-2M3 11h6m-6 4h6m11 4H4c-.55228 0-1-.4477-1-1V6c0-.55228.44772-1 1-1h16c.5523 0 1 .44772 1 1v12c0 .5523-.4477 1-1 1Z"/>
-        </svg>
-      </button>
-    </div>
+          <!-- LIST -->
+          <div class="button-toolbar-container unordered-list">
+            <button data-cmd="insertUnorderedList">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M9 8h10M9 12h10M9 16h10M4.99 8H5m-.02 4h.01m0 4H5"/>
+              </svg>
+            </button>
+          </div>
 
-    <!-- SPLIT COLUMN REMOVE -->
-    <div class="button-toolbar-container split-columns-remove">
-      <button id="split-columns-remove">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5v14m8-7h-4M3 11h6m-6 4h6m11 4H4c-.55228 0-1-.4477-1-1V6c0-.55228.44772-1 1-1h16c.5523 0 1 .44772 1 1v12c0 .5523-.4477 1-1 1Z"/>
-        </svg>
-      </button>
-    </div>
+                  <!-- SEPARATOR -->
+                  <div class="toolbar-separator" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+                    <path d="M12 0v24" stroke-linecap="round" stroke-width="1" />
+                  </svg>
+                  </div>
 
-  <!-- CLOSING BOTTOM TOOLBAR DIV -->
+          <!-- ALIGN LEFT -->
+          <div class="button-toolbar-container justify-left">
+            <button data-cmd="justifyLeft">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6h8m-8 4h12M6 14h8m-8 4h12"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- ALIGN CENTER -->
+          <div class="button-toolbar-container justify-center">
+            <button data-cmd="justifyCenter">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6h8M6 10h12M8 14h8M6 18h12"/>
+              </svg>
+            </button>
+          </div>
+          
+          <!-- ALIGN RIGHT -->
+          <div class="button-toolbar-container justify-right">
+            <button data-cmd="justifyRight">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6h-8m8 4H6m12 4h-8m8 4H6"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- ALIGHT JUSTIFY -->
+          <div class="button-toolbar-container justify-full">
+            <button data-cmd="justifyFull">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6H6m12 4H6m12 4H6m12 4H6"/>
+              </svg>
+            </button>
+          </div>
+
+
+                  <!-- SEPARATOR -->
+                  <div class="toolbar-separator" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+                      <path d="M12 0v24" stroke-linecap="round" stroke-width="1" />
+                    </svg>
+                  </div>
+
+
+
+          <!-- SPLIT COLUMN ADD -->
+          <div class="button-toolbar-container split-columns-add">
+            <button id="split-columns-add">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5v14m8-7h-2m0 0h-2m2 0v2m0-2v-2M3 11h6m-6 4h6m11 4H4c-.55228 0-1-.4477-1-1V6c0-.55228.44772-1 1-1h16c.5523 0 1 .44772 1 1v12c0 .5523-.4477 1-1 1Z"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- SPLIT COLUMN REMOVE -->
+          <div class="button-toolbar-container split-columns-remove">
+            <button id="split-columns-remove">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5v14m8-7h-4M3 11h6m-6 4h6m11 4H4c-.55228 0-1-.4477-1-1V6c0-.55228.44772-1 1-1h16c.5523 0 1 .44772 1 1v12c0 .5523-.4477 1-1 1Z"/>
+              </svg>
+            </button>
+          </div>
+
+      </div>
+
+      <!-- old: controls -->
+      <div class="toolbar_3">
+          <button id="add-textbox">Add Textbox</button>
+          <button id="add-line">Add Line</button>
+      </div>
+
+  <!-- CLOSE GLOBAL TOOLBAR -->
   </div>
 
-  
-
-<!-- CLOSING GLOBAL TOOLBAR DIV -->
-</div>
 
 
 
 
 
-<!-- ADD TEXTBOX - ADD LINE -->
-<div class="controls">
-  <button id="add-textbox">Add Textbox</button>
-  <button id="add-line">Add Line</button>
-</div>
 
 
 <!-- PREVIEW CONTENT -->

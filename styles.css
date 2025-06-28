@@ -36,14 +36,14 @@ main {
 /* ====================
    CONTROLS WRAPPER
    ==================== */
-.controls {
+.toolbar_3 {
   margin: 20px 0;
 }
 
 /* ====================
    CONTROLS BUTTONS
    ==================== */
-.controls button {
+.toolbar_3 button {
   margin: 0 5px;
   padding: 8px 12px;
   font-size: 14px;
@@ -77,7 +77,7 @@ main {
 /* ====================
    GLOBAL TOOLBAR WRAPPER
    ==================== */
-#global-toolbar {
+#toolbar_global {
   max-width: 800px;
   margin: 10px auto;
   padding: 10px;
@@ -92,7 +92,7 @@ main {
 /* ====================
    TOOLBAR TOP ROW
    ==================== */
-#global-toolbar .toolbar-top-row {
+#toolbar_global .toolbar_1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -102,7 +102,7 @@ main {
 /* ====================
    TOOLBAR BOTTOM ROW
    ==================== */
-#global-toolbar .toolbar-bottom-row {
+#toolbar_global .toolbar_2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -112,7 +112,7 @@ main {
 /* ====================
    TOOLBAR BUTTONS
    ==================== */
-#global-toolbar button {
+#toolbar_global button {
   background: none;
   border: none;
   margin: 0 4px;
@@ -124,7 +124,7 @@ main {
 /* ====================
    TOOLBAR BUTTON SVG ICONS
    ==================== */
-#global-toolbar button svg {
+#toolbar_global button svg {
   height: 24px;
   width: 24px;
   opacity: 0.7;
@@ -135,7 +135,7 @@ main {
 /* ====================
    TOOLBAR BUTTON HOVER EFFECT ON ICONS
    ==================== */
-#global-toolbar button:hover svg {
+#toolbar_global button:hover svg {
   background-color: #999;
   opacity: 1;
   transform: scale(1.1);
@@ -333,8 +333,8 @@ hr.line:hover {
 
   .delete-btn,
   .drag-handle,
-  #global-toolbar,
-  .controls {
+  #toolbar_global,
+  .toolbar_3 {
     display: none !important;
   }
 

@@ -1,7 +1,7 @@
 // ==== GLOBALS ====
 // ==== WORKS DONT CHANGE ====
 const preview = document.getElementById('preview');
-const toolbar = document.getElementById('global-toolbar');
+const toolbar = document.getElementById('toolbar_global');
 
 let activeWrapper = null;
 let columnCount = 1;
